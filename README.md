@@ -1,5 +1,4 @@
-# Healthcare Claims Performance & Cost Analysis Dashboard
-
+# Medicare Claims Analytics — Power BI Dashboard & ML Denial Prediction
 ## 📊 Project Overview
 An end-to-end healthcare analytics project analyzing 175,000+ Medicare 
 claims from 2008-2010 using CMS public data. Built a complete data 
@@ -53,6 +52,24 @@ pipeline from raw government data to an interactive Power BI dashboard.
 
 ## 📸 Dashboard Preview
 ![Dashboard](dashboard_preview.png)
+
+## 🤖 Part 2: Machine Learning Analysis
+
+In addition to the Power BI dashboard, I built an ML pipeline 
+to predict claim denials using patient demographics and chronic 
+conditions.
+
+**Key findings:**
+- Detected and fixed data leakage (payment amount encoding target)
+- Applied SMOTE to handle 96/4 class imbalance
+- State code accounts for 45% of feature importance — geography 
+  predicts denials more than patient health conditions
+- Risk profiling shows 21x denial rate difference between 
+  High and Low Risk tiers despite modest model accuracy
+- CMS SynPUF denial flags appear randomly assigned — 
+  a genuine data quality finding worth noting
+
+**Tools:** Python, Scikit-learn, SMOTE, Matplotlib
 
 ## 👩‍💻 Author
 **Usha Sree Dindi**  
